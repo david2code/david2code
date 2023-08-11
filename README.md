@@ -1,6 +1,13 @@
-- 👋 Hi, I’m David
-- 👀 I’m interested in Linux, c, mysql
-- 🌱 I’m currently learning Linux kernel development
+```shell
+/**
+ * Hello, I'm David.
+ * I love programming.
+ * C\C++ is my favorite language.
+ *
+ * Here is a example demonstrate how to create thread pool.
+ *
+ **/
+```
 
 <!---
 david2code/david2code is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

@@ -1,23 +1,9 @@
-#include <algorithm>
-#include <atomic>
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <vector>
-#include <deque>
-#include <string>
-#include <cctype>
-#include <typeinfo>
-#include <set>
-#include <list>
-#include <map>
-#include <bitset>
-#include <memory>
+#include <stdio.h>
+#include <stdlib.h>
 #include <assert.h>
 #include <pthread.h>
 #include <string.h>
 #include <unistd.h>
-using namespace std;
 
 
 /*
@@ -70,10 +56,10 @@ static void *worker_callback(void *arg) {
     nWorker *worker = (nWorker *)arg;
     int thread_id = worker->id;
 
-    cout << "Enter thread " << thread_id << endl;
+    printf("Enter thread %d\n", thread_id);
     while(1) {
         sleep(1);
-        cout << "thread " << thread_id << " is running" << endl;
+        printf("thread %d is running\n", thread_id);
     }
     return 0;
 }
@@ -135,7 +121,7 @@ int nThreadPoolDestory(nThreadPool *pool) {
             perror("thread join failed");
             exit(-1);
         }
-        cout << "thread join " << list->id << endl;
+        printf("thread join %d\n", list->id);
     }
 
     return 0;
