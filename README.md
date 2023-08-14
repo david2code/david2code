@@ -1,10 +1,11 @@
 ```shell
 /**
- * Hello, I'm David.
+ *
+ * Hello, I am David.
  * I love programming.
  * C\C++ is my favorite language.
  *
- * Here is a example demonstrate how to create thread pool.
+ * Here is an example demonstrate how to create thread pool.
  *
  **/
 ```
